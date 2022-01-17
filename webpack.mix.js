@@ -4,6 +4,6 @@ let mix = require('laravel-mix');
 
 // mix.serve('php artisan serve --port=8888');
 
-mix.js('src/js/app.js', 'public/dist')
-.sass('src/scss/app.scss', 'public/dist')
+mix.js('src/js/app.js', 'public/assets/dist')
+.sass('src/scss/app.scss', 'public/assets/dist')
  

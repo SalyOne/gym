@@ -1,7 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Open+Sans&display=swap');
+
+@import "variables.scss";
+
 body{
     padding: 0;
     margin:0;
-    h1{
-        color:red;
+    box-sizing: border-box;
+    background-color: $neutral1;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+//header
+header{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    padding: $spacing-s $spacing-l;
+
+    &>.container{
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    }
+    .image-container{
+        img{
+            height: 25px;
+        }
+    }
+    .menu{
+        ul{
+            list-style-type: none;
+            padding:$spacing-s;
+            li{
+                display: inline-block;
+                font-size: $t3;
+                font-weight: 500;
+                font-family: $header;
+                text-transform: capitalize;
+                transition: 1s;
+                a{
+                    color: rgba($neutral5,0.9);
+                    padding: 2px 12px;
+                    transition: 1s;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+                &:hover,
+                &.active{
+                    a{
+                        color: rgba($neutral1,0.9);
+                        background-color: $neutral5;
+                    }
+                }
+            }
+        }
+    }
+    .registration-staff{
+        display: flex;
+        gap: 10px;
     }
 }

@@ -1,0 +1,113 @@
+////sizing
+///////////
+
+//spacing
+$spacing-s: 16px;
+$spacing-m: 32px;
+$spacing-l: 80px;
+$spacing-xl: 180px;
+
+//font size
+$h1: 62px;
+$h2: 50px;
+$h3: 38px;
+$h4: 30px;
+$h5: 25px;
+$h6: 18px;
+
+$t1: 24px; 
+$t2: 20px; 
+$t3: 16px; 
+
+//buttons
+$b1: 14px;
+$b2: 12px;
+
+//icons
+$icon1: 40px;
+$icon2: 22px;
+
+//font family
+$text: 'Open Sans',sans-serif;
+$header: 'Inter', sans-serif;
+
+//colors
+$primary1: #25C870;
+$primary2: #4AE290;
+$primary3: #A5FFCE;
+
+$neutral1: #131316;
+$neutral2: #595962;
+$neutral3: #9797A2;
+$neutral4: #DEDEE3;
+$neutral5: #FFFFFF;
+
+
+.button{
+    text-transform: uppercase;
+    font-family: $header;
+    letter-spacing: 1.2;
+    text-decoration: none;
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+    }
+    &.primary{    
+        background-color: $primary1;
+        color: $neutral5;
+        a{
+            color: $neutral5;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: transparent;
+            color: $primary1;
+            a{
+                color: $primary1;
+            }
+        }
+    }
+    &.secondary{ 
+        background-color: transparent;
+        color: $neutral5;
+        a{
+            color: $neutral5;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: $primary1;
+            color: $neutral5;
+            a{
+                color: $neutral5;
+            }
+        }
+    }
+    &.outlined{
+        background-color: transparent;
+        color: $neutral1;
+        border: 1px solid $neutral1;
+        border-radius: 1px;
+        a{
+            color: $neutral1;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: $primary1;
+            color: $neutral5;
+            border: 1px solid transparent;
+            a{
+                color: $neutral5;
+            }
+        }
+    }
+    &.big{
+        padding: 14px 40px;
+        font-size: $b1;
+        font-weight: 800;
+    }
+    &.small{
+        padding: 12px 30px;
+        font-size: $b2;
+        font-weight: 800;
+    }
+}
