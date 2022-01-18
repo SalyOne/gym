@@ -1,3 +1,4 @@
+@import "reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Open+Sans&display=swap');
 
 @import "variables.scss";
@@ -17,15 +18,15 @@ header{
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    padding: $spacing-s $spacing-l;
+    padding: 0 $spacing-l;
+    height: 80px;
 
     &>.container{
     display: flex;
     width: 100% ;
     justify-content: space-between;
     align-items: center;
-    
-
+    height: 100%;
     }
     .image-container{
         img{
@@ -42,11 +43,11 @@ header{
                 font-weight: 500;
                 font-family: $header;
                 text-transform: capitalize;
-                transition: 1s;
+                transition: 0.3s;
                 a{
                     color: rgba($neutral5,0.9);
                     padding: 2px 12px;
-                    transition: 1s;
+                    transition: 0.3s;
                     text-decoration: none;
                     background-color: transparent;
                 }
@@ -63,5 +64,17 @@ header{
     .registration-staff{
         display: flex;
         gap: 10px;
+    }
+    .open-close-icon{
+        display: none;
+    }
+}
+.main-banner{
+    padding-top: 80px;
+    height: 100vh;
+    &>.container{  
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
 }
