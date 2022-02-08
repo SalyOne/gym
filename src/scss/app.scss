@@ -26,6 +26,7 @@ header{
     width: 100%;
     box-sizing: border-box;
     height: 80px;
+    background-color: rgba($neutral1, 0.3);
 
     &>.container{
     display: flex;
@@ -131,9 +132,51 @@ header{
     padding: $spacing-xl 0;
     .section-title{
         position: relative;
+        color: $neutral1;
+        font-size: $h2;
+        display: inline-block;
+        font-family: $header;
         
         svg{
             position: absolute;
+            top: 50%;
+            width: 150px;
+            transform: translate(-50%,-50%);
+        }
+        .green-part{
+            color: $primary2;
+            display: inline-block;
+        }
+    }
+    .text-container{
+        margin: $spacing-m 0;
+        p{
+            color: $neutral2;
+            font-family: $text;
+            font-size: $t2;
+            line-height: $spacing-m;
+            padding-bottom: $spacing-m;
+        }
+    }
+    .link{
+        position: relative;
+        text-transform: uppercase;
+        color: $neutral1;
+        text-decoration: none;
+        font-size: $b1;
+        font-family: $header;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        svg{
+            width: 22px;
+            margin-left: $spacing-s;
+            transition: 0.3s;
+        }
+        &:hover{
+            svg{ 
+                margin-left: calc($spacing-s + 5px);
+            }
         }
     }
 }
