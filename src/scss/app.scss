@@ -1,6 +1,9 @@
 @import "reset.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;800;900&family=Open+Sans&display=swap');
 @import "variables.scss";
+
 
 body{
     padding: 0;
@@ -129,7 +132,7 @@ header{
     }
 }
 .section{
-    padding: $spacing-xl 0;
+    padding-top: $spacing-xl;
     .section-title{
         position: relative;
         color: $neutral1;
@@ -176,6 +179,77 @@ header{
         &:hover{
             svg{ 
                 margin-left: calc($spacing-s + 5px);
+            }
+        }
+    }
+}
+.training-section{
+    .glide-slide{
+        position: relative;
+        .image-container{
+            position: relative;
+            width: 100%;
+            // height:21vw;
+            height: 0;
+            padding-bottom: 109%;
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            
+        }
+        .slide-overflow{
+                position: absolute;
+            .slider-badge{
+                display: block;
+                position: absolute;
+                bottom: $spacing-s;
+                left: $spacing-s;
+                background-color: $neutral5;
+                padding: 5px 15px;
+                font-size: $b1;
+                font-family: $header;
+                text-transform: capitalize;
+                font-weight: 800;
+            }
+        }
+        &:nth-child(2n){
+            padding: 15px;
+            .image-container{
+                // img{ 
+                //     transform: scaleY(0.9);
+                // }
+            }
+        }
+    }
+    .training-slider{
+        padding-top: $spacing-l;
+    }
+    .glide-arrows{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding-top: $spacing-l;
+        padding-right: 50px;
+        .glide-arrow{
+            margin: 0 15px;
+            cursor: pointer;
+            background-color: transparent;
+            svg{
+                width: 35px;
+            transition: 0.3s;
+            }
+            &.glide-left:hover{
+               svg{
+                transform: translateX(-5px);
+               } 
+            }
+            &.glide-right:hover{
+               svg{
+                   transform: translateX(5px);
+               } 
             }
         }
     }

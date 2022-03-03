@@ -19,11 +19,12 @@
   },
   "homepage": "https://github.com/SalyOne/gym#readme",
   "devDependencies": {
-    "laravel-mix": "^6.0.39",
+    "laravel-mix": "^6.0.41",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.48.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
     "sass-loader": "^12.4.0",
     "serve": "^13.0.2"
   }

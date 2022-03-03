@@ -53,6 +53,7 @@ $neutral5: #FFFFFF;
     a{
         text-decoration: none;
     }
+    
     &.primary{    
         background-color: $primary1;
         color: $neutral5;
@@ -119,6 +120,7 @@ $neutral5: #FFFFFF;
             }
         }
     }
+
     &.big{
         padding: 14px 40px;
         font-size: $b1;
